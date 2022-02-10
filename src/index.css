@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root,
+  .theme-1 {
+    --color-primary: #3b4664;
+    --color-secondary: #252d44;
+    --color-display: #181f32;
+
+    --color-text: white;
+    --color-button-text: #4c4c56;
+    --color-accent-text: white;
+
+    --button-primary: #eae3db;
+    --button-primary-border: #aea39f;
+    --button-secondary: #647299;
+    --button-secondary-border: #444f6f;
+    --button-accent: #d13f30;
+    --button-accent-border: #972113;
+  }
+  .theme-2 {
+    --color-primary: #e6e6e6;
+    --color-secondary: #d3cdcd;
+    --color-display: #eeeeee;
+
+    --color-text: #3b3b2f;
+    --color-button-text: #2e2d28;
+    --color-accent-text: white;
+
+    --button-primary: #e5e4e0;
+    --button-primary-border: #a69c92;
+    --button-secondary: #388187;
+    --button-secondary-border: #1a5d65;
+    --button-accent: #c85401;
+    --button-accent-border: #893a02;
+  }
+  .theme-3 {
+    --color-primary: #17062a;
+    --color-secondary: #1e0836;
+    --color-display: #1e0836;
+
+    --color-text: #f6df55;
+    --color-button-text: #f6df55;
+    --color-accent-text: white;
+
+    --button-primary: #331b4d;
+    --button-primary-border: #7b2592;
+    --button-secondary: #56077c;
+    --button-secondary-border: #a924d7;
+    --button-accent: #00decf;
+    --button-accent-border: #6dfaf1;
+  }
+  .theme-3 .bg-button-accent {
+    color: black;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  /* Default for the rest of the browsers */
+  .styled-scrollbar::-webkit-scrollbar {
+    height: 0.5rem;
+  }
+
+  .styled-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--button-secondary);
+    border-radius: 2rem;
+  }
+}
